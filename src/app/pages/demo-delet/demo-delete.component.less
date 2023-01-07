@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-item {
+  box-sizing: border-box;
+  margin: 10px 10px 10px 10px;
+  width: 100px;
+  height: 100px;
+  background: black;
+  color: aliceblue;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.vibrate-2 {
+  animation: vibrate-2 0.3s linear infinite both;
+}
+
+@keyframes vibrate-2 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+
